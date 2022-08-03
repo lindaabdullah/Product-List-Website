@@ -1,0 +1,22 @@
+body {
+    background-color: azure;
+    height: 95vh;
+}
+
+img {
+    height: 125px;
+    width: 145px;
+}
+
+ul {
+    border: solid 2px black;
+}
+
+li {
+    border: solid 2px black;
+    width: fit-content;
+    list-style: none;
+}
+.hidden {
+    display: none;
+}
