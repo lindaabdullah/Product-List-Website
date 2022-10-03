@@ -1,4 +1,4 @@
-const {name} = JSON.parse(atob(document.cookie.split('.')[1]));
+const name = document.cookie.match(/(?<=loginCookie=).*/)[0];
 
 function loadCart() {
 

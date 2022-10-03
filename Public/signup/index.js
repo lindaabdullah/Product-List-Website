@@ -1,6 +1,6 @@
 document.getElementById("signupButton").addEventListener("click", async function () {
     
-    console.log("hello");
+    // console.log("hello");
     const element = document.getElementById("text");
 
     const SSN = parseInt(document.getElementById("SSN").value);

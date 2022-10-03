@@ -7,17 +7,18 @@ document.getElementById("logInButton").addEventListener("click", async function 
     const user = document.getElementById("username").value;
     const pas = document.getElementById("password").value;
     
-    const f = await fetch("/api/login", {
+    const resp = await fetch("/api/login", {
         method: "post",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ username: user, password: pas })
     });
-    
-    const json = await f.json();
+    const json = await resp.json();
+
     if(json) {
-        console.log("authenticated");
+        // console.log("authenticated");
         window.location.href = "/";
     }
+    
 });
 
 document.getElementById("signUpButton").addEventListener("click", function() {
